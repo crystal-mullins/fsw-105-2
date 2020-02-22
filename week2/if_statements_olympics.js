@@ -61,10 +61,10 @@ if (true) {
  {
      console.log("true is a boolean")
  }
+// # 3 ? please help? Write an if statement that checks to see if a variable has been defined or not
 
 
 
- 
 // 4 & 5
  if ("s" > 12)
  {
