@@ -9,49 +9,66 @@ if (5 > 3) {
  
 //  if statements #2
  
-var cat
-var dog
-
-    if(cat.Length == 3){
+var cat = "cat"
+var dog = "dog"
+console.log(cat.length)
+    if(cat.length == 3){
     console.log("is the length")
     
 
-    else {
+    } else {
         console.log("they are the same");
-        if (cat.Length !== dog.Length)
+        if (cat.length !== dog.length)
         {
         console.log("they are not the same")
         }
     }
 
-    } 
-//  // bronze medel: object with values and if statments
-//  var human = {
-//      name: "Bobbie",
-//      age: 18,
-//  }
-//      console.log(human.age)
+     
+// //  // bronze medel: object with values and if statments
+ var person = {
+     name: "Bobbie",
+     age: 13,
+ }
+     
+    if (person.age >= 18){
+        console.log("Bobbie is allowed to go to the movie")
+    } else {
+        console.log("Bobbie is not allowed to go to the movie")
+    }
+    if (person.name.startsWith('B'))
+    {
+        console.log("Bobbie is allowed to go to the movie")
+    } else{
+        console.log("Bobbie is not allowed to go to the movie")
+    }
+     if (person.age >= 18 && person.name.startsWith('B')) 
+     {
+        console.log("Bobbie is allowed to go to the movie")
  
-//      if (human.age >= 18 && human.name.startsWith('B')) 
-//      {
-//         console.log("Bobbie is allowed to go to the movie")
+   } else  {
  
-//    } else  {
- 
-//         console.log("Bobbie is not allowed to go to the movie")
-//    } 
+        console.log("Bobbie is not allowed to go to the movie")
+   } 
  
 // //    silver medal
+ var one = 2
+   if (one === "1"){
  
-//    if (1 === "1" || 1 == "1"){
+         console.log("strict")
  
-//          console.log("strict", "loose")
+ }
+    else if (one !== "1"){ 
  
-//  }
-//  else if (1 !== "1"){ 
+        console.log("They are not equal")
+        if  (one == "1"){
+            console.log("loose")
+        } else {
+               console.log("they are not equal")
+            }
+
+        }
  
-//         console.log("not equal at all")
-//  }
  
 //  // ternary syntax
  
@@ -59,51 +76,52 @@ var dog
  
 //      console.log("not equal at all")
 
-//     //  Gold Medal
-// // 1
-//     if ("dog" === "dog")
-//  {
-//      console.log("dog is a string!");
-//  }
+    //  Gold Medal
+// 1
+    if (typeof"dog" === "string")
+ {
+     console.log("dog is a string!");
+ }
      
-// // 2
-//  if (true === true)
-//  {
-//      console.log("true is a boolean")
-//  }
-// // # 3 ? please help? Write an if statement that checks to see if a variable has been defined or not
+// 2
+ if (true === true)
+ {
+     console.log("true is a boolean")
+ }
+// // # 3 
 
+var animal = "horse";
+if(typeof animal === "undefined"){
+    console.log("is undefined")
+} else{
+    console.log("is defined")
+}
 
 
 // // 4 & 5
-//  if ("s" > 12)
-//  {
-//      console.log("it is not greater")
+ if ("s" > 12)
+ {
+     console.log("it is not greater")
 
-// }
-// if ("sa" > 1)
-//  {
-//      console.log("it is not greater")
+}
+if ("sa" > 1)
+ {
+     console.log("it is not greater")
 
-//  }
+ }
 
-//  if ("w" > 3)
-//  {
-//      console.log("it is not greater")
+ if ("w" > 3)
+ {
+     console.log("it is not greater")
 
-//  }
+ }
 
-// else ("s" === "s")
-// {
-//     console.log("they are the same")
-// }
+else ("s" === "s")
+{
+    console.log("they are the same")
+}
  
-// // 6 ternary statement to check for odd/even number
-// var num = 7
+// 6 ternary statement to check for odd/even number
 
-// if ( num % 2 == 0) {
-// 	console.log("Even Number");
-// }else
-// {
-// 	console.log("Odd Number");
-// }
+var num = 7;
+(num % 2 == 0 ? console.log("even number"): console.log("odd number"));
