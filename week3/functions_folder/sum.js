@@ -1,1 +1,0 @@
-function sum(num1) { }

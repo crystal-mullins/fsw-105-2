@@ -42,14 +42,16 @@ countItemsOnList(officeItems, "computer");
 // }  
 // ]
 
-// function getIdAge(peopleWhoWantToSeeMadMaxFuryRoad(age))
+// function getIdAge(age)
+//     for (i = 0; i < 18; i ++){
 
-//     if (peopleWhoWantToSeeMadMaxFuryRoad.age <= 18){
+//     if (i <= 18){
 //         console.log("you are not allowed to go to the movies")
 //     }
-//     if (peopleWhoWantToSeeMadMaxFuryRoad.gender != "female"){
+//     else {
 //         console.log("you are not allowed to go to the movies")
 //     }
+// }
     
 
 
@@ -66,3 +68,19 @@ countItemsOnList(officeItems, "computer");
 // console.log("Adawehi is not allowed to go to the movies")
 // console.log("Cyperus is allowed to go to the movies")
 // console.log("Trinity is not allowed to go to the movies");
+
+var counter = 1
+function countTo101(counter, declareOddEven){
+
+for (i = 0; i > 101; i ++){
+    if(i % 2 == 0){
+    console.log("even" + i)
+    }
+     else {
+        console.log("odd" + i)
+    }
+
+}
+}
+
+// (i % 2 == 0 ? console.log("even number"): console.log("odd number"));
