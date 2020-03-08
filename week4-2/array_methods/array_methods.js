@@ -82,24 +82,32 @@ var foods = fruit.concat(vegetables)
 console.log(foods)
 
 // array method # 8
-var foodsIndex = foods.indexOf("orange", "1")
-console.log(foodsIndex)
 
-delete foods.index
-console.log(foods.Index)
+
+foods.splice(4, 2)
+
+// var foodsIndex = foods.indexOf("orange", "1")
+console.log(foods)
+
+// delete foods.index
+// console.log(foodsIndex)
 // var result = arrOfFoods.splice(2,2,"bacon")
 // console.log(result
 
 // array method # 9
 
-// foods.reverse();
+foods.reverse();
 
 // var allAtOnce = foods.split([]).reverse().join([])
 
 // var splitFoods = foods.split("")
-// // console.log(splitFoods)
+console.log(foods)
 // var revFoods = splitFoods.reverse()
 // // var joinFoods = revFoods.join("")
 // // // console.log(reversedName)
 // console.log(revFoods)
 // console.log(allAtOnce)
+// arrays # 10
+
+var string = foods.toString()
+console.log(string)
