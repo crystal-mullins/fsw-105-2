@@ -52,7 +52,7 @@ function  firstHalf(str)
 console.log(firstHalf(greeting))
 
 
-// #3: This too needs a lot of reworking to make it fully functional. As per the requirement, you need to write a function that uses slice() and the other functions you developed in #2 above to return the first half of the string. I see you are aware of .slice based on line 34, however, you should not hard code the second parameter (8 on those lines). Instead you will use middle_of_string value returned from the other function you have developed in #2 above. #4: Again, you should not be hard coding the second parameter of the .slice property, but rather use the middle_of_string value.
+
 
 // //string methods #4 return a string where the first half is capitalized and the second half is lower cased If the string length is odd, capitalize the shorter of the first half.)
 const greeting2 = "Hello, how are you today ?"
