@@ -96,55 +96,58 @@ const mapVegetables =() => { console.log("carrot" + carrots)}
 //         friendly: false
 //     }
 // ]
-// const filterForFriendly = people => console.log(" the Charachter is ${people}!")
+// const filterForFriendly = people => console.log()
 // console.log(filterForFriendly(people))
 
 // 4) Re-write the following functions to be arrow functions:
 
-// let doMathSum = (a, b) => console.log(a + b)
-// return doMathSum()
+let doMathSum = (a, b) => console.log(a + b)
+return doMathSum()
 
 // let produceProduct = function(a, b){
 //     return a * b
-// }
+
+
 
 // 5) Write a printString function that takes firstName, lastName, and age as parameters and returns a string like the following:
-
-
+ printString = (first, last, age) => {
+     console.log('hi ${first} ${last}, how does it feel to be ${age}?');
+ };
+console.log(printString("Jane", "Doe", "100"));
 // 6) Use template literals to build the string from #5
 
 
 
 // 7) Use the shorthand syntax to make the following filter take up one line. Copy and paste the array to test it.
 
-const animals = [
-    {
-        type: "dog",
-        name: "theodore"
+// const animals = [
+//     {
+//         type: "dog",
+//         name: "theodore"
     
-    },
-    {
-        type: "cat",
-        name: "wiskers"
-    }
-    {
-        type: "pig",
-        name: "piglette"
+//     },
+//     {
+//         type: "cat",
+//         name: "wiskers"
+//     }
+//     {
+//         type: "pig",
+//         name: "piglette"
     
-    },
-    {
-        type: "dog",
-        name: "sparkey"
-    }
+//     },
+//     {
+//         type: "dog",
+//         name: "sparkey"
+//     }
 
-]
-function filterForDogs(arr){
-    return arr.filter(animal => {
-        if (animal.type === "dog"){
-            return true
-        }else {
-            return false
-        }
+// ]
+// function filterForDogs(arr){
+//     return arr.filter(animal => {
+//         if (animal.type === "dog"){
+//             return true
+//         }else {
+//             return false
+//         }
         
-    })
-}
+//     })
+// }
