@@ -1,6 +1,6 @@
 const readlineSync = require("readline-sync");
 
-const user_name = readlineSync.question(`What is your name?`);
+const userName = readlineSync.question(`What is your name?`);
 
 const intro = `Welcome ${userName} this is the Escape room. Follow the directions to escape.`;
 console.log(intro);

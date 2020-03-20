@@ -72,7 +72,7 @@ function shoppingSpree(arr){
     
             const result = arr.reduce(function(final,obj){
                 
-                console.log(final)
+                // console.log(final)
                 final +=  obj.price
                return final
             }
@@ -94,19 +94,18 @@ var wishList = [
 ]
 console.log(shoppingSpree(wishList));
 
+var arrays = [
+    ["1","2", "3"],
+    [true],
+    [4,5,6]
+]
 
+const flat = arrays.reduce((total, amount) => {
+return total.concat(amount);
 
-// // function flatten(arr){
-// //  let newArr = arr.concat(function(final){
-// //       return newArr
-// //  })
-// //  console.log(newArr)
-// // }var arrays = [
-// //     ["1","2", "3"],
-// //     [true],
-// //     [4,5,6]
-// // ];
-// // console.log(flatten(arrays));
+ },[]);
+
+console.log(flat);
 
 // // 6) Given an array of potential voters, return an object representing the results of the vote
 // // Include how many of the potential voters were in the ages 18-25, how many from 26-35, how many from 36-55, and how many of each of those age ranges actually voted. The resulting object containing this data should have 6 properties. See the example output at the bottom.
@@ -128,7 +127,7 @@ const voters = [
         { name: "jeff", age: 19,voted: true }
     ];
     function voterResult(arr){
-        let voterResults = voters.reduce(
+        let voterResults = arr.reduce(
             function(final, voter){
                 if (voter.age > 18 && voter.age <= 25 && voter.voted) {
                     final.youngVotes++;
@@ -141,21 +140,23 @@ const voters = [
                     final.midVotes++;
                 }
                 if (voter.age >= 26 && voter.age <= 35){
-                     final.midVotes++;
+                     final.mids++;
                 }
                 if (voter.age >= 36 && voter.age <= 55 && voter.voted){
-                    final.oldVotes++;
+                    final.oldsVotes++;
                 }
                 if (voter.age >= 36 && voter.age <= 55){
-                    final.oldsVotes++;
+                    final.olds++;
                }
                return final;
             },
-            { youngVotes: 0, youth: 0, midVotes: 0, mids: 0, oldVotes: 0, olds: 0 }
+            { youngVotes: 0, youth: 0, midVotes: 0, mids: 0, olds: 0, oldsVotes: 0 }
                 );
-                console.log(voterResults);
+                return voterResults;
             }
         
         
-    console.log(voters)
+    
+
+    console.log(voterResult(voters))
 
