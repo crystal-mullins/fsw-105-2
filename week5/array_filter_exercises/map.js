@@ -28,9 +28,9 @@ console.log(to_str([2,5,100]));
 // // 3) Capitalize each of an array of names
 
 function cap(arr){
-    let result = arr.map(function(str)
+    let result = arr.map(function(str,)
     {
-    return str.toUpperCase();
+    return str.charAt(0).toUpperCase() + ;
     }
     )
     return result;
