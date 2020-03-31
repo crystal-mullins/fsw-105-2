@@ -75,52 +75,93 @@ const mapVegetables =() => { console.log("carrot" + carrots)}
  
  
 //  3) Re-write this .filter() using an arrow function:
+const people = [
+    {
+        name1:"princess peach",
+        friendly: false
+    
+    },
+    {
+        name1:"luigi",
+        friendly: true
+    },
+    {
+        name1:"mario",
+        friendly: true
+    
+    },
+    {
+        name1:"Browser",
+        friendly: false
+    }
+]
+var filterForFriendly = people.filter(obj => obj.hasOwnProperty(`friendly`));
+// console.log(arr)
 
-// const people = [
-//     {
-//         name:"princess peach",
-//         friendly: false
-    
-//     },
-//     {
-//         name:"luigi",
-//         friendly: true
-//     },
-//     {
-//         name:"mario",
-//         friendly: true
-    
-//     },
-//     {
-//         name:"Browser",
-//         friendly: false
-//     }
-// ]
-// const filterForFriendly = people => console.log()
-// console.log(filterForFriendly(people))
+console.log(filterForFriendly)
+ 
+
 
 // 4) Re-write the following functions to be arrow functions:
+var a = 1;
+var b = 2;
+const doMathSum = (a, b) => {console.log(a + b)
+return a, b;
+}
+console.log(doMathSum(a, b))
 
-let doMathSum = (a, b) => console.log(a + b)
-return doMathSum()
-
-// let produceProduct = function(a, b){
-//     return a * b
 
 
 
 // 5) Write a printString function that takes firstName, lastName, and age as parameters and returns a string like the following:
- printString = (first, last, age) => {
-     console.log('hi ${first} ${last}, how does it feel to be ${age}?');
- };
-console.log(printString("Jane", "Doe", "100"));
+
+ printString = (arr) => console.log(`Hi ${first} ${last}, how does it feel to be ${age2}?`);
+ 
+    let first = "Jane";
+    let last = "Doe";
+    let age2 = "40;"
+ printString()
+
+
+
 // 6) Use template literals to build the string from #5
 
+printString2 = (arr) => console.log(`Hi ${first2} ${last2}, how does it feel to be ${age3}?`);
+ 
+    let first2 = "Crystal";
+    let last2 = "Mullins";
+    let age3 = "30;"
+ printString2()
 
 
 // 7) Use the shorthand syntax to make the following filter take up one line. Copy and paste the array to test it.
 
-// const animals = [
+const animals = [
+    {
+        type: "dog",
+        name: "theodore"
+    
+    },
+    {
+        type: "cat",
+        name: "wiskers"
+    },
+    {
+        type: "pig",
+        name: "piglette"
+    
+    },
+    {
+        type: "dog",
+        name: "sparkey"
+    }
+
+]
+const filterForDogs = (arr) => { return animals.filter(animal => { return animal.type === "dog" ? true : false })};
+console.log(filterForDogs(animals))
+
+// let filterForDogs = animals.filter(obj2 => obj2.hasOwnProperty(animals.type === "dog"));
+//        animals [
 //     {
 //         type: "dog",
 //         name: "theodore"
@@ -129,7 +170,7 @@ console.log(printString("Jane", "Doe", "100"));
 //     {
 //         type: "cat",
 //         name: "wiskers"
-//     }
+//     },
 //     {
 //         type: "pig",
 //         name: "piglette"
@@ -141,13 +182,18 @@ console.log(printString("Jane", "Doe", "100"));
 //     }
 
 // ]
-// function filterForDogs(arr){
-//     return arr.filter(animal => {
-//         if (animal.type === "dog"){
-//             return true
-//         }else {
-//             return false
-//         }
-        
-//     })
-// }
+// console.log(filterForDogs)
+// console.log(filterForDogs)
+
+// var filterForFriendly = people.filter(obj => obj.hasOwnProperty(`friendly`));
+// // console.log(arr)
+
+// console.log(filterForFriendly)
+// 8) Using template literals, write a function that takes location and name parameters and outputs a message formatted like this:
+
+printString3 = (arr) => console.log(`Hi ${name2}! \n Welcome to  ${location}. \n  I hope you enjoy your stay. Please ask the president of ${location} if you need anything`);
+ 
+let name2 = "Janice"
+let location = "Hawaii"
+    
+ printString3()
