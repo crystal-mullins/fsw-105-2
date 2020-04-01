@@ -1,68 +1,68 @@
 //Use the built-in .reduce() method on arrays to solve all of these problems:
-// // 1) Turn an array of numbers into a total of all the numbers
-
-function total(arr){
-    let result= arr.reduce(function(num)
-    {   
-        arr.toString(num)
-        
-        return num + num + num;
+// 1) Turn an array of numbers into a total of all the numbers
+function arrOfNum(arr){
+    const result = arr.reduce(function(num1, num2, num3){
+        if (num1 > num2){
+            return num1 + num2 
+        }else if (num2 > num1){
+            return num1 + num2 
+        }else if (num3 > num1 && num2){
+            return num1 + num2 + num3
+        }
+        console.log(`total:` + num1, num2,  num3)
     }
     )
+
     return result;
+     
 }
-console.log("your total is " + total ([1,2,3]));
+console.log(arrOfNum([1,2,3]));
 
 // // // 2) Turn an array of numbers into a long string of all those numbers.
-
-const nums =[1,2,3]
-const result1 = nums.reduce(function(final, current)
-    {
-        final === nums, nums, nums
-     return  final;
-}
+nums = [1,2,3]
+const result = nums.reduce(function(){
+    console.log(nums.toString()); 
+    //    return nums.toString()
+    //    console.log(nums)
+    }
 )
-    console.log(result1);
+    // return result
+
+
+
+
+  
 
 console.log(([1,2,3]));
 
+// 3) Turn an array of voter objects into a count of how many people voted
+const voter2 = [
+    { name: "steve", voted: false },
+    { name: "Janet", voted: false },
+    { name: "rebecca", voted: false },
+    { name: "harvey", voted: false },
+    { name: "sam", voted: false },
+    { name: "phil", voted: true },
+    { name: "mike", voted: true },
+    { name: "fred", voted: true },
+    { name: "beckey", voted: true },
+    { name: "mark", voted: true },
+    { name: "joey", voted: true },
+    { name: "jeff", voted: true }
+];
+function get_voter2(arr){
+let get_voters2 = arr.reduce(function(final2, voter2){
+    if(voter2.voted){
+        final2.didVote++
+    } else {
+        final2.didntVote++
+    }
+    return final2
+}, { didVote: 0, didntVote: 0});
+return get_voters2;
+}
+console.log(get_voter2(voter2))
 
-// // const voteCount = voters.reduce(function(final, voter){
-// //     if(!voter.voted){
-// //         final++
-// //     }
-// //     return final
-// // }, 0)
-// // console.log(voteCount)
-
-// // return an object
-
-
-// // const voters = [
-// //     { name: "steve", voted: false },
-// //     { name: "Janet", voted: false },
-// //     { name: "rebecca", voted: false },
-// //     { name: "harvey", voted: false },
-// //     { name: "sam", voted: false },
-// //     { name: "phil", voted: true },
-// //     { name: "mike", voted: true },
-// //     { name: "fred", voted: true },
-// //     { name: "beckey", voted: true },
-// //     { name: "mark", voted: true },
-// //     { name: "joey", voted: true },
-// //     { name: "jeff", voted: true }
-// // ]
-// // function get_voters(arr){
-// // const voterObj = voters.reduce(function(final, voter){
-// //     if(voter.voted){
-// //         final.didVote++
-// //     } else {
-// //         final.didntVote++
-// //     }
-// //     return final
-// // }, { didVote: 0, didntVote: 0})
-// // }
-// // console.log(get_voters[voters])
 
 
 // // 4) Given an array of all your wishlist items, figure out how much it would cost to just buy everything at once 
@@ -99,6 +99,7 @@ var arrays = [
     [true],
     [4,5,6]
 ]
+// 5) Given an array of arrays, flatten them into a single array
 
 const flat = arrays.reduce((total, amount) => {
 return total.concat(amount);

@@ -157,7 +157,7 @@ const animals = [
     }
 
 ]
-const filterForDogs = (arr) => { return animals.filter(animal => { return animal.type === "dog" ? true : false })};
+const filterForDogs = (arr) => { return result = animals.filter(animal => { return animal.type === "dog" ? true : false })};
 console.log(filterForDogs(animals))
 
 // let filterForDogs = animals.filter(obj2 => obj2.hasOwnProperty(animals.type === "dog"));
@@ -185,10 +185,12 @@ console.log(filterForDogs(animals))
 // console.log(filterForDogs)
 // console.log(filterForDogs)
 
-// var filterForFriendly = people.filter(obj => obj.hasOwnProperty(`friendly`));
-// // console.log(arr)
+var filterForFriendly = people.filter(obj => obj.hasOwnProperty(`friendly`));
+// console.log(arr)
 
-// console.log(filterForFriendly)
+console.log(filterForFriendly)
+
+
 // 8) Using template literals, write a function that takes location and name parameters and outputs a message formatted like this:
 
 printString3 = (arr) => console.log(`Hi ${name2}! \n Welcome to  ${location}. \n  I hope you enjoy your stay. Please ask the president of ${location} if you need anything`);

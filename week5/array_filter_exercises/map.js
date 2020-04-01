@@ -30,12 +30,12 @@ console.log(to_str([2,5,100]));
 function cap(arr){
     let result = arr.map(function(str,)
     {
-    return str.charAt(0).toUpperCase() + ;
+    return str.charAt(0).toUpperCase() + str.charAt(1).toLowerCase() + str.charAt(2).toLowerCase() + str.charAt(3).toLowerCase() + str.charAt(4).toLowerCase() + str.charAt(5).toLowerCase() + str.charAt(6).toLowerCase() + str.charAt(7).toLowerCase() + str.charAt(8).toLowerCase() + str.charAt(9).toLowerCase() + str.charAt(10).toLowerCase() + str.charAt(11).toLowerCase();
     }
     )
     return result;
 }
-console.log(cap(["john", "JACOB", "jindGleHimer","schmidt"]));
+console.log(cap(["john", "JACOB", "jinGleHimer","schmidt"]));
 
 // // 4) Make an array of strings of the names
 
@@ -91,11 +91,11 @@ const my_list = [
         const result = arr.map(function(num){
            
             if( num.age>= 18){
-                return  num.name + " is allowed to see the Matrix"  
+                return  ` ${num.name} is allowed to see the Matrix`  
                 }
             else if (num.age< 18){
 
-                return num.name + " is not allowed to see the Matrix"  
+                return  ` ${num.name} is under age`  
             }  
         
         })

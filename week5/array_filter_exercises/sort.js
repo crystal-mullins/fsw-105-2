@@ -53,37 +53,30 @@ console.log(lenghtShort(["dog", "wolf", "by", "family", "eaten", "camping"]));
 // // 4) Sort an array alphabetically
 function alphabetical(arr)
 {
-    const result = arr.sort(function(a, b)    {
-    if (a < b)
-     {
-           return a +  b
-           
-    } else if(b < a)
-    {
-        return b +  a
-    }
-    return result
-})
-console.log(arr)
-}
 
-    
+var list = ["dog", "wolf", "by", "family", "eaten", "camping"]
+console.log(list.sort())
+}
 
 console.log(alphabetical(["dog", "wolf", "by", "family", "eaten", "camping"]));
 
 
 // // 5) Sort the objects in the array by age
+var list2 = [
+    { name: "Quite Samuri", age: 22},
+    { name: "Arrogant Ambassador", age: 100},
+    { name: "Misunderstood Observer", age: 2},
+    { name: "Unlucky Swami", age: 77},]
 
-// function byAge(arr){
-
-// }
-
-// console.log(byAge([
-//     { name: "Quite Samuri", age: 22},
-//     { name: "Arrogant Ambassador", age: 100},
-//     { name: "Misunderstood Observer", age: 2},
-//     { name: "Unlucky Swami", age: 77},
-// ]))
+function byAge(arr){
+    const result = arr.sort(function(a, b){ console.log(a.age,  b.age)
+        return a.age - b.age}
+    
+    );
+return result
 
 
-// this is far as i could get!!!
+}
+
+console.log(byAge(list2))
+
